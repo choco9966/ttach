@@ -25,6 +25,8 @@ Similar to what Data Augmentation is doing to the training set, the purpose of T
 ```python
 import ttach as tta
 tta_model = tta.SegmentationTTAWrapper(model, tta.aliases.d4_transform(), merge_mode='mean')
+
+tta_model = tta.SegmentationTTAWrapper(model, merge_mode='mean')
 ```
 #####  Classification model wrapping [[docstring](ttach/wrappers.py#L52)]:
 ```python
