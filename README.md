@@ -50,6 +50,8 @@ transforms = tta.Compose(
 )
 
 tta_model = tta.SegmentationTTAWrapper(model, transforms)
+
+masks = tta_model(images)
 ```
 ##### Custom model (multi-input / multi-output)
 ```python
