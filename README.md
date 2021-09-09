@@ -42,6 +42,7 @@ tta_model = tta.KeypointsTTAWrapper(model, tta.aliases.flip_transform(), scaled=
 ## Advanced Examples
 #####  Custom transform:
 ```python
+import ttach as tta
 # defined 2 * 2 * 3 = 18 augmentations !
 transforms = tta.Compose(
     [
